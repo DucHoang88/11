@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <br>
+    <button onclick="cong()">cộng</button>
+    <button onclick="tru()">trừ</button>
+    <button onclick="nhan()">nhân</button>
+    <button onclick="chia()">chia</button>
+    <p>kết quả là:</p>
+    <p id="kq"></p>
+
+    <script>
+        function cong() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+
+
+            document.getElementById('kq').innerHTML = a + b
+        }
+
+        function tru() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+
+            c = a - b
+            document.getElementById('kq').innerHTML = c
+        }
+
+        function nhan() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+
+            c = a * b
+            document.getElementById('kq').innerHTML = c
+        }
+
+        function chia() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+
+            c = a / b
+            document.getElementById('kq').innerHTML = c
+        }
+    </script>
+
+
+</body>
+
+</html>
